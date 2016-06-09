@@ -1064,7 +1064,7 @@ console.log(gbpCurrCodeItem(items));
 function itemsMadeOfWood() {
   var woodenItems = [];
   for (var obj of items) {
-    if (obj.materials === "wood") {
+    if (obj.materials.indexOf("wood") !== -1) {
       woodenItems.push(obj.title);
     }
   }
